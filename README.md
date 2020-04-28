@@ -3,10 +3,8 @@
 
 # 소개
 
-weather-app-poseidon 은 기상 정보를 실시간으로 보여줄 수 있는 웹앱입니다. 2017년 에 만든 cleanmaps의 후속 앱입니다. 지난 7월 에 만든 기존 앱에서 
-없었던 웹서버를 제작하였으며 클라이언트 측에는 CSS Grid로 제작, fetch api를 사용하여 서버에 요청하는 구조와 기능을 도입, 서버 측에는 Node js 
-express 미들웨어를 통해 크로스 도메인(CORS) 문제를 줄이고, 사용자의 API 키를 보안할 수 있는 기능을 구현하게 되었습니다.호스팅 서버로는 heroku를 
-도입하게 되었습니다.
+weather-app-poseidon 은 기상 정보를 실시간으로 보여줄 수 있는 웹앱입니다.클라이언트 측에는 CSS Grid로 제작, fetch api를 사용하여 서버에 요청하는 
+구조와 기능을 만들었고, 서버 측에는 Node js express 미들웨어를 통해 크로스 도메인(CORS) 문제를 줄이고, 사용자의 API 키를 보안할 수 있는 기능을 구현하게 되었습니다.호스팅 서버로는 heroku를 사용하게 되었습니다.
 
 
 ![image](https://user-images.githubusercontent.com/11676387/63869960-fe2b5780-c9f3-11e9-9768-ca50d0117822.png)
@@ -164,7 +162,7 @@ UI 가 어떤 식으로 배치되고, 제작되었는지 관련된 설명을 드
   - weathermap-app.herokuapp.com/ <- | JSON 방식으로 전달  | <- weathermap-app.herokuapp.com/forecast/&lat=위도&lon=경도/info
   
 
-  일기 예보 의 정보는 HTTP GET/forecast/&lat=위도&lon=경도/info 로 접근 할 수 있습니다.(위 상단의 REST API 를 참고 해주십시오.)그리고,GET방식으
+  일기 예보 의 정보는 HTTP GET/forecast/&lat=위도&lon=경도/info 로 접근 할 수 있습니다.(위 상단의 REST API 를 참고 해주세요.)그리고,GET방식으
   로 요청 을 세팅 한뒤 "fetch api" 를 활용하게 됩니다.fetch api 의 Request 객체에 URL,Method 를 전달 해준뒤 웹 서버로 접근 합니다.이 때 같은 도
   메인 상에 접근 하므로 SOP 를 회피 할 필요가 없습니다.이미 SOP가 성립되기 때문입니다.
   
@@ -427,7 +425,7 @@ UI 가 어떤 식으로 배치되고, 제작되었는지 관련된 설명을 드
    그렇다면 다음과 같이 접근해보겠습니다.HTTP GET /forecast/seoul/info 에러가 발생하게 되고,app.js 에 내장되어 있던 에러가 발생합니다.즉,에러를 
    감지하고 미들웨어 를 작동시킨뒤 next 로 추적하여 체인 처럼 하나씩 올라가다가 결국 500 에러 미들웨어에 걸려 에러 가 출력 되는 것입니다.이처럼 서
    버측에서 발생하는 모든것을 미들웨어 를 통해 감지합니다.클라이언트가 서버측에 요청한다면 미리 만들어놓은 클라이언트 에러페이지 가 호출됩니다.(위의 
-   클라이언트 에러 페이지를 참고해주십시오.) 
+   클라이언트 에러 페이지를 참고해주세요.) 
    
    
   ![image](https://user-images.githubusercontent.com/11676387/64073542-7f2b6d00-ccda-11e9-90c9-e33c024cc70e.png)
