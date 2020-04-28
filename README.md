@@ -451,19 +451,8 @@ UI 가 어떤 식으로 배치되고, 제작되었는지 관련된 설명을 드
    
 
 
-   # 버전
    
-   혹시 위치 추적 이 안되시는 분들은 https://weather-app-poseidon-demo.herokuapp.com/ 여기를 참조 해주세요.
-   
-   
-   
-   # 기타
-   
-   문제 점이나 잘못된정보를 알려주시면 감사하겠습니다.
-   
-   - woosung827@gmail.com
-   
-   - https://github.com/woosungchoi/weather-app-poseidon/issues/new 
+  
    
 
    
