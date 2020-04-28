@@ -26,7 +26,7 @@ weather-app-poseidon 은 기상 정보를 실시간으로 보여줄 수 있는 �
   
 # 개발 언어 / 프레임 워크
 
-   - HTML5,CSS3,JS(ES 15+),Node js,Express,REST API
+   - HTML5,CSS3,JS(ES 15+),Node js,Express
    
    - OpenWeather Map,MapBox,High Charts,Heroku
   
